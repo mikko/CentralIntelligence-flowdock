@@ -4,6 +4,9 @@
   "private": true,
   "author": "Mikko Pohja <mikko.pohja@futurice.com>",
   "description": "Central Intelligence flowdock client",
+  "scripts": {
+    "start": "./bin/hubot"
+  },
   "dependencies": {
     "hubot": "^2.19.0",
     "dotenv": "^4.0.0",
