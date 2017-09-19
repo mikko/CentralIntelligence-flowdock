@@ -1,0 +1,16 @@
+{
+  "name": "KrisseBot",
+  "version": "0.0.0",
+  "private": true,
+  "author": "Mikko Pohja <mikko.pohja@futurice.com>",
+  "description": "Central Intelligence flowdock client",
+  "dependencies": {
+    "hubot": "^2.19.0",
+    "dotenv": "^4.0.0",
+    "hubot-flowdock": "^0.7.7",
+    "ci-client": "github:mikko/CentralIntelligence-client"
+  },
+  "engines": {
+    "node": "0.10.x"
+  }
+}
