@@ -18,7 +18,10 @@ client.setUserPropertiesParser(ctx => ({
 
 const updateGroupUsers = (robot) => {
   robot.adapter.flows.forEach(flow => {
-    const users = flow.users.map(user => user.id);
+    const users = flow.users.reduce((memo, user) => {
+      memo[user.id] = user;
+      return memo;
+    }, {});
     const flowName = flow.parameterized_name;
     client.sendCommand('setGroupUsers', { group: flowName, type: 'flowdock', users: users });
   });
